@@ -7,13 +7,17 @@ public class Task {
     private String description;
     private boolean status;
     private LocalDate deadline;
-    private int id;
+    private int taskId;
 
-    public Task(String title, String description, LocalDate deadline, int id) {
+    public Task(String title, String description, LocalDate deadline, int taskId) {
         this.title = title;
         this.description = description;
         this.status = false;
         this.deadline = deadline;
-        this.id = id;
+        this.taskId = taskId;
+    }
+
+    public int getTaskId() {
+        return taskId;
     }
 }
