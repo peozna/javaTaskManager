@@ -20,4 +20,13 @@ public class Task {
     public int getTaskId() {
         return taskId;
     }
+
+    public String getTask () {
+        return
+                title + " " +
+                description + " " +
+                status + " " +
+                deadline + " " +
+                taskId;
+    }
 }

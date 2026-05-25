@@ -21,4 +21,13 @@ public class TaskManager {
        return taskList.removeIf(task -> task.getTaskId() == id);
     }
 
+    public List<String> getAllTasksAsString() {
+        List<String> result = new ArrayList<>();
+
+        for (Task task : taskList) {
+            result.add(task.getTask());
+        }
+        return result;
+    }
+
 }
