@@ -9,7 +9,7 @@ public class TaskManager {
 
     private int nextTaskId = 1;
 
-    public boolean createTask(String title, String description, LocalDate deadline, int id) {
+    public boolean createTask(String title, String description, LocalDate deadline) {
         Task newTask = new Task(title, description, deadline, nextTaskId);
         taskList.add(newTask);
         nextTaskId++;
